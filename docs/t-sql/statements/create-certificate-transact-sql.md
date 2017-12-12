@@ -182,7 +182,8 @@ CREATE CERTIFICATE certificate_name
   
 ## Permissions  
  Requires CREATE CERTIFICATE permission on the database. Only Windows logins, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] logins, and application roles can own certificates. Groups and roles cannot own certificates.  
-  
+ 
+ To create a certificate for another user with the AUTHORIZATION argument, the executing user requires IMPERSONATE permission on the user to be authorized.
 ## Examples  
   
 ### A. Creating a self-signed certificate  
